@@ -1,4 +1,12 @@
-
+/*Consider the relations
+BOAT (BID, BNAME, COLOUR),
+SAILOR (SID, SNAME, AGE, RATING)
+RESERVES (BID, SID, DAY)
+Create the above tables, insert suitable tuples and perform the following
+operations in Oracle SQL:
+a. Obtain the bid of the boats reserved by „Ram‟.
+b. Retrieve the bid of the boats reserved by all the sailors.
+c. Find the number of boats reserved by each sailor*/
 
 
 
