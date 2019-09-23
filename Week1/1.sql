@@ -10,7 +10,7 @@ b. Find the number of employees working in each department
 c. Update the ProjectNo of Employee bearing SSN=1 to ProjectNo=20*/
 
  create table employee
-    (ssn number primary key,
+    (ssn number primary key,                --ssn can be made varchar for ssn to stay as '001' instead of '1'.
    name varchar(15),
     deptno number);
 
