@@ -261,7 +261,7 @@ new   1: insert into reserves values(1,1,'sunday')
 
 SQL> select bid from reserves                      --b.)
   2  group by bid
-  3  having count(sid)=(select count(sid)
+  3  having count(bid)=(select count(sid)
   4  from sailor);
 
        BID
