@@ -190,12 +190,12 @@ new   1: insert into borrow values('123',2,'15.6.19')
 
 --a.)
 
-SQL> select name 
-  2  from student 
-  3  where usn in (
-  4  select usn
-  5  from borrow
-  6  where isbn='123');
+ select name 
+    from student 
+   where usn in (
+    select usn
+    from borrow
+    where isbn='123');
 
 /*
 NAME
@@ -207,12 +207,12 @@ bhushan
 
 --b.)
 
-SQL> select name from student
-  2  where usn in (
-  3  select usn from borrow
-  4  where isbn in (
-  5  select isbn from book
-  6  where title like 'core database'));
+ select name from student
+    where usn in (
+    select usn from borrow
+    where isbn in (
+    select isbn from book
+    where title like 'core database'));
 
 /*
 NAME
@@ -223,9 +223,9 @@ bhushan
 
 --c.)
 
-SQL> select usn, count(isbn) as COUNT
-  2  from borrow
-  3  group by usn;
+ select usn, count(isbn) as COUNT
+   from borrow
+   group by usn;
 
        USN	COUNT
 ---------- ----------
