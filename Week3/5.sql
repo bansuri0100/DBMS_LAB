@@ -212,7 +212,7 @@ bhushan
     select usn from borrow
     where isbn in (
     select isbn from book
-    where title like '%database'));
+    where title like '%database%'));
 
 /*
 NAME
