@@ -1,7 +1,7 @@
 --1.​ ​Write​ ​a​ ​PL/SQL​ ​program​ ​to​ ​display​ ​the​ ​contents​ ​of​ ​the​ ​above​ ​tables​ ​and​ ​then​ ​update
 --the​ ​balance​ ​of​ ​a​ ​few​ ​accounts.
 
-
+'''
 CREATE​ ​ TABLE​​ ​ BRANCH_DETAIL​ ​ (
 CODE​ ​ VARCHAR(2)​ ​ PRIMARY​ ​ KEY,
 NAME​ ​ VARCHAR(3),
@@ -24,9 +24,8 @@ INSERT​ ​ INTO​​ ​ BRANCH_DETAIL​ ​ VALUES​​ ​ ('&CODE',​ 
 INSERT​​ ​ INTO​​ ​ CUSTOMER_DETAIL​ ​ VALUES​​ ​ ('&SSN','&NAME','&PLACE');
 INSERT​ ​ INTO​​ ​ ACCOUNT_DETAIL​ ​ VALUES​​ ​ ('&ACCNO','&SSN','&CODE','&BALANCE');
 INSERT​ ​ INTO​​ ​ EMPLOYEE_DETAIL​ ​ VALUES​​ ​ ('&SSN','&NAME','&SALARY','&DEPTNO');
+'''
 
-PL/SQL​ ​PROGRAM​ ​:
-SET​​ ​ SERVEROUTPUT​ ​ ON
 BEGIN
 ​ FOR​​ ​ rec​ ​ IN​​ ​ ( ​ SELECT​​ ​ * ​ ​ FROM​​ ​ BRANCH_DETAIL)
 ​ ​ LOOP
